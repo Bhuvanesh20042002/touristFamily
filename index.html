@@ -1,0 +1,92 @@
+<!-- tourist-registration.html -->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Tourist Registration</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="container">
+<div class="card">
+<h1>Tourist Registration</h1>
+<p class="lead">Quick sign-up form for visitors. Data is stored locally in your browser (no server required).</p>
+
+
+<div id="message"></div>
+
+
+<form id="regForm" novalidate>
+<div>
+<label for="fullName">Full name *</label>
+<input id="fullName" name="fullName" type="text" placeholder="e.g. Priya Kumar" required />
+</div>
+
+
+<div>
+<label for="email">Email *</label>
+<input id="email" name="email" type="email" placeholder="you@domain.com" required />
+</div>
+
+
+<div>
+<label for="phone">Phone *</label>
+<input id="phone" name="phone" type="tel" placeholder="+91 98xxxxxxxx" required />
+</div>
+
+
+<div>
+<label for="age">Age</label>
+<input id="age" name="age" type="number" min="0" max="120" placeholder="e.g. 28" />
+</div>
+
+
+<div>
+<label for="country">Country *</label>
+<input id="country" name="country" type="text" placeholder="Country name" required />
+</div>
+
+
+<div>
+<label for="purpose">Purpose of visit</label>
+<select id="purpose" name="purpose">
+<option value="leisure">Leisure / Holiday</option>
+<option value="business">Business</option>
+<option value="adventure">Adventure / Trek</option>
+<option value="other">Other</option>
+</select>
+</div>
+
+
+<div>
+<label for="fromDate">From date *</label>
+<input id="fromDate" name="fromDate" type="date" required />
+</div>
+
+
+<div>
+<label for="toDate">To date *</label>
+<input id="toDate" name="toDate" type="date" required />
+</div>
+
+
+<div class="full">
+<label for="notes">Special notes / Requirements</label>
+<textarea id="notes" name="notes" placeholder="Allergies, accessibility needs, special requests..."></textarea>
+</div>
+
+
+<div class="full actions">
+<button type="submit">Register</button>
+<button type="button" id="clearBtn" class="ghost">Clear saved data</button>
+<div class="small">Tip: registrations are saved to your browser's local storage.</div>
+</div>
+
+
+</form>
+
+
+<div class="registrations">
+<h3 style="margin-top:18px;margin-bottom:8px">Saved registrations</h3>
+</html>
